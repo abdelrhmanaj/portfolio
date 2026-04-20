@@ -5,13 +5,13 @@ const Hero = () => {
   return (
     <section className="hero-section container" id="home">
       <div className="hero-content animate-fade-in">
-        <span className="hero-subtitle">Hello, I'm Abdel</span>
+        <span className="hero-subtitle">Hello, I'm Abdelrhman Mohammed</span>
         <h1 className="heading-xl">
-          Crafting <span className="text-gradient">digital experiences</span> that inspire.
+          Crafting <span className="text-gradient">digital solutions</span> that perform.
         </h1>
         <p className="hero-description">
-          I'm a passionate developer specializing in building exceptional digital experiences. 
-          Currently focused on building accessible, human-centered products.
+          I'm a passionate software engineer with a deep interest in operating systems, 
+          machine learning, and full-stack development. I build robust and efficient systems.
         </p>
         <div className="hero-actions">
           <a href="#projects" className="btn btn-primary">
