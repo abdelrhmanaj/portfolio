@@ -40,7 +40,7 @@ const Contact = () => {
         </a>
 
         {/* LinkedIn */}
-        <a href="https://linkedin.com/in/abdelrhmanaj" target="_blank" rel="noreferrer" className="contact-card glass">
+        <a href="https://linkedin.com/in/abdelrhmanaja" target="_blank" rel="noreferrer" className="contact-card glass">
           <div className="contact-icon" style={{ color: '#0077b5', background: 'rgba(0, 119, 181, 0.1)' }}>
             <Briefcase size={28} />
           </div>
