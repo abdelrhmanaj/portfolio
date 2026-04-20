@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 import EmbeddedBackground from './components/EmbeddedBackground';
 
 function App() {
-  const [theme, setTheme] = useState('system');
+  const [theme, setTheme] = useState('light');
   const [isBooted, setIsBooted] = useState(false);
   const [isBooting, setIsBooting] = useState(false);
 
