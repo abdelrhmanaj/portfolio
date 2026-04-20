@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Cpu, Server, Wifi, Zap, Database, Activity, Radio, HardDrive } from 'lucide-react';
 
 const icons = [Cpu, Server, Wifi, Zap, Database, Activity, Radio, HardDrive];
 
 const EmbeddedBackground = () => {
-  const [nodes, setNodes] = useState([]);
-
-  useEffect(() => {
+  const [nodes] = useState(() => {
     // Generate random nodes only on the client
-    const generatedNodes = Array.from({ length: 25 }).map((_, i) => ({
+    return Array.from({ length: 25 }).map((_, i) => ({
       id: i,
       Icon: icons[Math.floor(Math.random() * icons.length)],
       top: `${Math.random() * 100}%`,
@@ -20,8 +18,7 @@ const EmbeddedBackground = () => {
       parallaxFactorY: (Math.random() - 0.5) * 0.08,
       rotation: Math.random() * 360
     }));
-    setNodes(generatedNodes);
-  }, []);
+  });
 
   return (
     <div className="embedded-background">
